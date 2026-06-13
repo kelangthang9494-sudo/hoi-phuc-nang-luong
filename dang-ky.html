@@ -219,14 +219,12 @@
   document.getElementById('reg-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = document.getElementById('submit-btn');
+    const { total, b1, b2, b3 } = updateTotal();
     btn.disabled = true;
     btn.textContent = 'Đang xử lý...';
 
-    const { total, b1, b2, b3 } = updateTotal();
-
     try {
       const params = new URLSearchParams({
-        action:      'createOrder',
         name:        document.getElementById('inp-name').value.trim(),
         email:       document.getElementById('inp-email').value.trim(),
         phone:       document.getElementById('inp-phone').value.trim(),
@@ -235,7 +233,7 @@
         bump3:       b3,
         totalAmount: total
       });
-      const res = await fetch(GAS_URL + '?' + params.toString());
+      const res = await fetch('/api/create-order?' + params.toString());
       const data = await res.json();
       if (data.success) {
         const p = new URLSearchParams({
