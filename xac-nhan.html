@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán — Hệ Thống Hồi Phục Năng Lượng</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#7c3c5c', secondary: '#b06080' },
+        fontFamily: { sans: ['Be Vietnam Pro', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    * { font-family: 'Be Vietnam Pro', sans-serif; }
+    body { background-color: #fdf7f9; }
+    .gradient-hero { background: linear-gradient(135deg, #3d1a2e 0%, #7c3c5c 50%, #b06080 100%); }
+    .pulse-dot { animation: pulsedot 1.5s infinite; }
+    @keyframes pulsedot { 0%,100%{opacity:1} 50%{opacity:.3} }
+  </style>
+</head>
+<body class="text-gray-900 min-h-screen">
+
+<header class="gradient-hero py-4 px-4 text-center">
+  <p class="text-rose-200 text-sm font-medium tracking-wide">Hệ Thống Hồi Phục Năng Lượng</p>
+</header>
+
+<!-- PROGRESS -->
+<div class="bg-white border-b border-gray-100 py-3 px-4">
+  <div class="max-w-lg mx-auto flex items-center gap-3">
+    <div class="flex items-center gap-2 text-sm">
+      <span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-bold">✓</span>
+      <span class="hidden sm:inline text-gray-400">Đăng ký</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-primary"></div>
+    <div class="flex items-center gap-2 text-sm font-semibold text-primary">
+      <span class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold">2</span>
+      <span class="hidden sm:inline">Thanh toán</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200"></div>
+    <div class="flex items-center gap-2 text-sm text-gray-400">
+      <span class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold">3</span>
+      <span class="hidden sm:inline">Nhận tài liệu</span>
+    </div>
+  </div>
+</div>
+
+<main class="max-w-lg mx-auto px-4 py-10">
+  <div class="text-center mb-8">
+    <h1 class="text-2xl sm:text-3xl font-black text-gray-900 mb-2">Quét Mã Để Thanh Toán</h1>
+    <p class="text-gray-500 text-sm">Trang tự chuyển khi nhận được thanh toán — không cần làm gì thêm</p>
+  </div>
+
+  <!-- AMOUNT -->
+  <div class="bg-white rounded-2xl shadow-sm border border-pink-100 p-6 mb-5 text-center">
+    <p class="text-gray-500 text-sm mb-1">Số tiền cần thanh toán</p>
+    <p class="text-4xl font-black text-orange-600" id="amount-display">229.000đ</p>
+  </div>
+
+  <!-- QR CARD -->
+  <div class="bg-white rounded-2xl shadow-sm border border-pink-100 p-6 mb-5">
+    <p class="text-center text-sm font-semibold text-gray-700 mb-4">Quét mã QR bằng app ngân hàng</p>
+
+    <!-- QR from SePay — dynamic by amount + content -->
+    <div class="text-center mb-4">
+      <img id="qr-img"
+        src=""
+        alt="QR thanh toán"
+        class="w-52 h-52 mx-auto rounded-xl border border-gray-200 object-contain">
+    </div>
+
+    <div class="bg-gray-50 rounded-xl overflow-hidden text-sm">
+      <div class="grid grid-cols-2 border-b border-gray-100">
+        <span class="px-4 py-2.5 text-gray-500 font-medium">Ngân hàng</span>
+        <span class="px-4 py-2.5 text-gray-900 font-semibold">ACB</span>
+      </div>
+      <div class="grid grid-cols-2 border-b border-gray-100">
+        <span class="px-4 py-2.5 text-gray-500 font-medium">Số tài khoản</span>
+        <span class="px-4 py-2.5 text-gray-900 font-semibold">33124327</span>
+      </div>
+      <div class="grid grid-cols-2 border-b border-gray-100">
+        <span class="px-4 py-2.5 text-gray-500 font-medium">Chủ tài khoản</span>
+        <span class="px-4 py-2.5 text-gray-900 font-semibold">NGUYỄN THỊ HOA HỒNG</span>
+      </div>
+      <div class="grid grid-cols-2 border-b border-gray-100">
+        <span class="px-4 py-2.5 text-gray-500 font-medium">Số tiền</span>
+        <span class="px-4 py-2.5 text-orange-600 font-bold" id="amount-row">229.000đ</span>
+      </div>
+      <div class="grid grid-cols-2">
+        <span class="px-4 py-2.5 text-gray-500 font-medium">Nội dung CK</span>
+        <span class="px-4 py-2.5 text-primary font-bold" id="ck-content">HPNL0001</span>
+      </div>
+    </div>
+
+    <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl p-3">
+      <p class="text-amber-700 text-xs text-center leading-relaxed">
+        Vui lòng giữ đúng nội dung chuyển khoản để hệ thống tự động xác nhận nhanh hơn
+      </p>
+    </div>
+  </div>
+
+  <!-- STATUS -->
+  <div class="bg-white rounded-2xl shadow-sm border border-pink-100 p-5 mb-5 text-center" id="status-box">
+    <div class="flex items-center justify-center gap-2 text-gray-500 text-sm" id="status-waiting">
+      <span class="w-2.5 h-2.5 rounded-full bg-amber-400 pulse-dot inline-block"></span>
+      <span>Đang chờ xác nhận thanh toán...</span>
+    </div>
+    <div class="hidden text-green-600 font-semibold text-sm" id="status-paid">
+      ✓ Đã nhận giao dịch · Đang chuyển trang...
+    </div>
+    <div class="hidden text-red-500 text-sm" id="status-underpaid">
+      ⚠ Số tiền chưa đủ. Vui lòng chuyển khoản đúng số tiền ở trên.
+    </div>
+  </div>
+
+  <p class="text-center text-xs text-gray-400 leading-relaxed px-4">
+    Sau khi chuyển khoản thành công, hệ thống tự động xác nhận trong vài giây và bạn sẽ được chuyển sang trang nhận tài liệu.
+  </p>
+</main>
+
+<footer class="text-center py-6 text-gray-400 text-xs">
+  © 2025 Hệ Thống Hồi Phục Năng Lượng · Cam kết hoàn tiền 100% trong 30 ngày
+</footer>
+
+<script>
+  const GAS_URL = 'https://script.google.com/macros/s/AKfycbz3pGU1eYRl-cClAwQrADTqdD5SYlLlwmueDKphl8NMUXa_qlhUnTm1HE2DQ_9-XfEm/exec';
+
+  const params      = new URLSearchParams(window.location.search);
+  const orderId     = params.get('orderId')     || '';
+  const ckContent   = params.get('ckContent')   || 'HPNL0001';
+  const totalAmount = parseInt(params.get('totalAmount') || '229000', 10);
+
+  function fmtVnd(n) { return n.toLocaleString('vi-VN') + 'đ'; }
+
+  // Fill UI
+  document.getElementById('ck-content').textContent  = ckContent;
+  document.getElementById('amount-display').textContent = fmtVnd(totalAmount);
+  document.getElementById('amount-row').textContent     = fmtVnd(totalAmount);
+
+  // SePay VietQR
+  const qrUrl = `https://img.vietqr.io/image/ACB-33124327-compact2.png?amount=${totalAmount}&addInfo=${encodeURIComponent(ckContent)}&accountName=NGUYEN%20THI%20HOA%20HONG`;
+  document.getElementById('qr-img').src = qrUrl;
+
+  // Poll status
+  let pollInterval;
+  function startPolling() {
+    if (!orderId) return;
+    pollInterval = setInterval(async () => {
+      try {
+        const res  = await fetch(`${GAS_URL}?action=getStatus&orderId=${encodeURIComponent(orderId)}`);
+        const data = await res.json();
+        if (!data.success) return;
+
+        if (data.status === 'PAID') {
+          clearInterval(pollInterval);
+          document.getElementById('status-waiting').classList.add('hidden');
+          document.getElementById('status-paid').classList.remove('hidden');
+          setTimeout(() => { window.location.href = 'cam-on.html'; }, 1500);
+        } else if (data.status === 'UNDERPAID') {
+          document.getElementById('status-waiting').classList.add('hidden');
+          document.getElementById('status-underpaid').classList.remove('hidden');
+        }
+      } catch(e) { /* retry silently */ }
+    }, 5000);
+  }
+
+  startPolling();
+</script>
+</body>
+</html>

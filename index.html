@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hệ Thống Hồi Phục Năng Lượng - Ngủ Sâu & Phục Hồi Chỉ 5-10 Phút Mỗi Ngày</title>
+  <meta name="description" content="Bí quyết để cơ thể tự ngủ sâu và phục hồi chỉ với 5-10 phút mỗi ngày. Ngay cả khi bạn đã mất ngủ nhiều năm. Chỉ 229.000đ. Đảm bảo hoàn tiền 30 ngày.">
+  <meta property="og:title" content="Hệ Thống Hồi Phục Năng Lượng - Ngủ Sâu Tự Nhiên">
+  <meta property="og:description" content="Bí quyết để cơ thể tự ngủ sâu và phục hồi chỉ với 5-10 phút mỗi ngày">
+  <meta property="og:type" content="website">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c3c5c',
+            secondary: '#b06080',
+            accent: '#f59e0b',
+            cta: '#e85d04'
+          },
+          fontFamily: {
+            sans: ['Be Vietnam Pro', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { font-family: 'Be Vietnam Pro', sans-serif; }
+    .gradient-hero { background: linear-gradient(135deg, #3d1a2e 0%, #7c3c5c 50%, #b06080 100%); }
+    .gradient-cta { background: linear-gradient(135deg, #e85d04, #f59e0b); }
+    .story-bg { background: linear-gradient(180deg, #fdf4f7 0%, #fff 100%); }
+    .secret-card { border-left: 4px solid #b06080; }
+    .cta-pulse { animation: ctapulse 2s infinite; }
+    @keyframes ctapulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(232, 93, 4, 0.4); }
+      50% { box-shadow: 0 0 0 12px rgba(232, 93, 4, 0); }
+    }
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; }
+    .strikethrough { text-decoration: line-through; color: #9ca3af; }
+    .highlight-box { background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; }
+    .path-bad { background: linear-gradient(135deg, #fef2f2, #fee2e2); border: 2px solid #fca5a5; }
+    .path-good { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border: 2px solid #86efac; }
+    body { background-color: #fdf7f9; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+  <!-- STICKY CTA BAR (mobile) -->
+  <div class="sticky-cta bg-white border-t-2 border-orange-500 shadow-2xl py-3 px-4 flex items-center justify-between md:hidden">
+    <div>
+      <p class="text-xs strikethrough">1.763.000đ</p>
+      <p class="text-lg font-bold text-orange-600">229.000đ</p>
+    </div>
+    <a href="#cta-main" class="gradient-cta text-white px-6 py-3 rounded-full font-bold text-sm shadow-lg cta-pulse">
+      THAM GIA NGAY
+    </a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="gradient-hero text-white pt-12 pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-rose-200 text-lg mb-4 italic">Dành cho người muốn ngủ ngon hơn, tự thức dậy tỉnh táo không cần báo thức và làm việc cả ngày không mệt mỏi</p>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-6">
+        Hệ Thống Hồi Phục Năng Lượng
+        <span class="block text-amber-300 mt-2 text-2xl sm:text-3xl lg:text-4xl">Bí Quyết Để Cơ Thể Tự Ngủ Sâu Và Phục Hồi Chỉ Với 5 - 10 Phút Mỗi Ngày</span>
+      </h1>
+
+      <p class="text-rose-200 text-lg mb-6 italic">Ngay cả khi bạn đã mất ngủ nhiều năm, và đã thử đủ cách mà vẫn thất bại.</p>
+
+      <img src="hero-before-after.jpg" alt="Trước và sau khi dùng Hệ Thống Hồi Phục Năng Lượng" class="w-full max-w-xl mx-auto rounded-2xl shadow-xl mb-8 block">
+
+      <!-- CTA BOX -->
+      <div class="bg-white/10 backdrop-blur rounded-2xl p-6 mb-8 max-w-sm mx-auto">
+        <a href="#cta-main" class="block gradient-cta text-white px-8 py-4 rounded-xl text-xl font-black shadow-xl cta-pulse hover:opacity-90 transition mb-3">
+          THAM GIA NGAY - CHỈ 229.000Đ
+        </a>
+        <p class="text-rose-200 text-sm">Đảm bảo hoàn tiền trong 30 ngày</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-2xl mx-auto">
+      <p class="text-gray-700 text-lg leading-relaxed mb-6">Nếu bạn đã nằm rất lâu nhưng vẫn không thể ngủ vì có rất nhiều suy nghĩ không ngừng trong đầu</p>
+
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-red-500 mt-1 text-xl flex-shrink-0">●</span>
+          <span>Những âm thanh nhỏ làm bạn tỉnh giấc và rất khó để ngủ lại</span>
+        </li>
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-red-500 mt-1 text-xl flex-shrink-0">●</span>
+          <span>Càng cố ngủ thì càng tỉnh</span>
+        </li>
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-red-500 mt-1 text-xl flex-shrink-0">●</span>
+          <span>Sáng dậy uể oải</span>
+        </li>
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-red-500 mt-1 text-xl flex-shrink-0">●</span>
+          <span>Lúc cần ngủ thì tỉnh, lúc cần tỉnh lại buồn ngủ</span>
+        </li>
+      </ul>
+
+      <div class="highlight-box rounded-xl p-6">
+        <p class="text-gray-900 text-xl font-bold text-center leading-snug">Thì đây chính xác là điều bạn cần đọc nhất thời điểm này, nó sẽ thay đổi hoàn toàn giấc ngủ và cuộc sống của bạn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGITATION: Already Tried -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">Bạn hiểu rõ vấn đề đang gặp phải và nỗ lực giải quyết nó</h2>
+
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-gray-400 mt-1 flex-shrink-0">—</span><span>Bạn thử lên giường nằm sớm hơn</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-gray-400 mt-1 flex-shrink-0">—</span><span>Bạn đeo tấm bịt mắt, giảm ánh sáng trong phòng</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-gray-400 mt-1 flex-shrink-0">—</span><span>Bạn thử điều hòa nhịp thở</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-gray-400 mt-1 flex-shrink-0">—</span><span>Bạn cố dập tắt những suy nghĩ trong đầu</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-gray-400 mt-1 flex-shrink-0">—</span><span>Nghe những âm thanh êm dịu</span></li>
+      </ul>
+
+      <p class="text-gray-700 text-lg leading-relaxed mb-4">Nhưng cứ đến tầm chiều tối, bạn bắt đầu nhen nhóm một nỗi lo mơ hồ: <em>"Liệu đêm nay mình có ngủ được không?"</em>.</p>
+      <p class="text-gray-700 leading-relaxed mb-4">Khi kim đồng hồ chỉ 2 - 3 giờ sáng, mọi người đều đã ngủ say, chỉ còn lại bạn với mớ suy nghĩ hỗn độn.</p>
+      <p class="text-gray-700 leading-relaxed mb-6">Đến gần sáng, khi cơ thể quá kiệt quệ, vào giấc được một chút thì lại đến giờ phải thức dậy đi học, đi làm. Sự bất lực này tạo ra một vòng lặp ức chế và bực bội cực độ.</p>
+      <p class="text-xl font-semibold text-primary">Mình hiểu cảm giác đó.</p>
+    </div>
+  </section>
+
+  <!-- PERSONAL STORY -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 story-bg">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-primary">Cách mình kết thúc vòng lặp đó</h2>
+
+      <div class="space-y-4 text-gray-700 leading-relaxed">
+        <p>Mình thức khuya ban đầu là vì tính chất công việc rồi dần thành thói quen. Ban ngày bù đầu vào công việc.</p>
+        <p>Buổi tối còn chút thời gian, mình xem phim, chơi game, lướt tik tok. Hơn 11h đêm mới tắm rửa lên giường. Nằm lướt tiếp tới 1, 2h sáng.</p>
+
+        <div class="bg-red-50 border-l-4 border-red-400 rounded-r-xl p-5 my-6">
+          <p class="font-semibold text-red-800 mb-3">Sau khoảng 3 năm liên tục mất ngủ:</p>
+          <ul class="space-y-2 text-red-700">
+            <li>Đôi mắt mình luôn đỏ đầy tơ máu và thâm quầng</li>
+            <li>Sáng dậy không nổi</li>
+            <li>Ngủ chập chờn 4-5 tiếng mỗi đêm khiến mình trở nên chậm chạp và không tập trung làm việc được</li>
+            <li>Mình trở nên cáu kỉnh, và nó ảnh hưởng tới cả hôn nhân của mình</li>
+          </ul>
+        </div>
+
+        <p class="font-semibold text-gray-900">Khoảng thời gian này mình cảm thấy cực kỳ tồi tệ.</p>
+        <p>Thời điểm cuối 2025, vì chút mâu thuẫn nhỏ mà 2 vợ chồng mình cãi nhau. Anh ấy nói rất nhiều lời khiến mình cảm thấy bị tổn thương.</p>
+        <p>Cả đêm chỉ nằm khóc và suy nghĩ, mình không tài nào ngủ được dù rất mệt. Lúc vào rửa mặt, hình ảnh trong gương khiến mình nhìn đến thẫn thờ.</p>
+        <p class="italic text-gray-600">Hai mắt trũng sâu thâm quầng, toàn tơ máu đỏ quạch, khuôn mặt xám xịt chỉ còn sự mệt mỏi. Công việc trì trệ, hôn nhân rạn nứt.</p>
+      </div>
+
+      <div class="mt-10 bg-white rounded-2xl shadow-md p-6">
+        <p class="text-gray-700 leading-relaxed mb-2">Chính khoảnh khắc đó khiến mình nhận ra giấc ngủ đã ảnh hưởng đến cuộc sống của mình nhiều như thế nào.</p>
+      <p class="text-gray-700 leading-relaxed mb-2">Mình bắt đầu nghiêm túc tìm hiểu về giấc ngủ.</p>
+      <p class="text-gray-700 leading-relaxed mb-4">Và trong quá trình đó mình nhận ra một điều mà rất nhiều người không để ý:</p>
+
+        <div class="highlight-box rounded-xl p-5 mb-4">
+          <p class="text-gray-900 font-semibold leading-relaxed">Mỗi ngày chúng ta liên tục bị kích thích bởi thông tin, công việc và cảm xúc từ bên ngoài. Nhưng tới tối, thay vì dừng lại để não nghỉ ngơi, chúng ta lại tiếp tục lao vào mạng xã hội, video, tin tức và hàng trăm thông tin khác. Não bộ gần như chưa bao giờ thật sự được nghỉ.</p>
+        </div>
+
+        <p class="text-gray-700 leading-relaxed mb-2">Khi não đã quen với tần suất kích thích cao như vậy thì việc đi vào giấc ngủ tự nhiên sẽ trở nên rất khó.</p>
+      <p class="text-gray-700 leading-relaxed mb-4">Lúc đó mình mới hiểu rằng vấn đề của mình không đơn giản là khó ngủ, mà là <strong>não bộ đã bị "nghiện kích thích" trong một thời gian rất dài.</strong></p>
+        <p class="text-gray-700 leading-relaxed font-semibold">Và sự quá tải kích thích ban ngày với tình trạng mất ngủ ban đêm là "hai mặt của cùng một vấn đề". Chúng liên quan chặt chẽ với nhau theo một vòng lặp độc hại.</p>
+      </div>
+
+      <div class="mt-8 space-y-3 text-gray-700">
+        <p>Sau đó mình bắt đầu thử từng chút một.</p>
+        <p>Ban đầu chỉ là mình bớt suy nghĩ linh tinh trước khi ngủ hơn</p>
+        <p>Rồi mình tắt đèn đi ngủ sớm hơn</p>
+        <p>Rồi vào giấc nhanh hơn</p>
+        <p>Mình ngủ sâu tới sáng</p>
+        <p class="font-semibold text-primary">Khoảng hai tháng sau, chất lượng giấc ngủ của mình khác hoàn toàn trước đây.</p>
+      </div>
+
+      <div class="mt-6 bg-green-50 border-l-4 border-green-500 rounded-r-xl p-5">
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-green-500 font-bold flex-shrink-0">✓</span><span>Mỗi sáng mình luôn dậy trước báo thức</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-500 font-bold flex-shrink-0">✓</span><span>Tâm trạng mỗi ngày đều cực kỳ tốt</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-500 font-bold flex-shrink-0">✓</span><span>Mình lấy lại sự tập trung trong công việc</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-500 font-bold flex-shrink-0">✓</span><span>Vợ chồng hòa thuận hơn hẳn vì mình đã không còn cáu kỉnh như trước</span></li>
+        </ul>
+      </div>
+
+      <p class="mt-6 text-gray-700 italic">Mình nhận ra là trước khi bộ não được làm dịu, mọi nỗ lực ép ngủ đều là công cốc.</p>
+      <p class="mt-2 text-gray-700">Rồi mình bắt đầu chia sẻ những điều này với những người khác và họ cũng có những thay đổi tích cực.</p>
+      <p class="mt-4 text-center font-bold text-lg text-primary">Từ "không thể nhìn vào gương" đến mắt sáng trở lại, câu chuyện của chính mình.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <div class="space-y-6">
+
+        <div class="bg-blue-50 rounded-2xl p-6 border border-blue-100">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="testimonial-tac-gia.jpg" alt="Tác giả" class="w-14 h-14 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-gray-900">Tác giả, 32 tuổi</p>
+              <p class="text-sm text-gray-500">Xuất phát điểm: 7 năm thức khuya vì công việc</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-2 text-sm leading-relaxed">Mình sống chung với mất ngủ cho đến khi sức khỏe suy kiệt, công việc trì trệ, hôn nhân rạn nứt mới lao vào tìm cách cứu vãn.</p>
+          <p class="text-gray-700 mb-4 text-sm leading-relaxed">Mình bắt đầu với 2 phút đầu tiên.</p>
+          <p class="font-semibold text-gray-800 text-sm mb-3">Kết quả:</p>
+          <ul class="space-y-1">
+            <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">✓</span><span>Ngày 7, ngủ sâu suốt đêm lần đầu tiên sau nhiều năm</span></li>
+            <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">✓</span><span>Tự tỉnh dậy lúc 5 giờ 40 sáng</span></li>
+            <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">✓</span><span>Đêm không còn nghe tiếng xe rác vì đã ngủ sâu trước đó</span></li>
+            <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">✓</span><span>Tập trung làm việc cả ngày không mệt, tối còn năng lượng</span></li>
+            <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">✓</span><span>Mắt sáng hơn, không còn cáu gắt</span></li>
+            <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">✓</span><span>Hôn nhân nhẹ nhàng hơn, không còn cãi vã vì sự cáu kỉnh của mình</span></li>
+          </ul>
+          <blockquote class="mt-4 bg-white rounded-xl p-4 border-l-4 border-amber-400">
+            <p class="text-gray-700 italic text-sm">"Mình nhìn vào gương và thấy mắt mình đang dần sáng rõ. Cảm giác như trước kia luôn có một lớp sương mù, và mình đã lau sạch nó. Điều này làm mình hạnh phúc hơn tất cả, hơn cả việc tiệm có thêm khách hay hôn nhân cải thiện."</p>
+            <p class="text-xs text-gray-500 mt-2">Câu mình nói sau 47 ngày</p>
+          </blockquote>
+        </div>
+
+        <div class="bg-purple-50 rounded-2xl p-6 border border-purple-100">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="testimonial-co-linh.jpg" alt="Cô Linh" class="w-14 h-14 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-gray-900">Cô Linh, 58 tuổi</p>
+              <p class="text-sm text-gray-500">Sức khỏe thể chất và tinh thần khá tốt, chỉ khó vào giấc, tỉnh 3-4 lần giữa đêm</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-2 text-sm leading-relaxed">Ban ngày ngủ gật nhưng nằm xuống lại không ngủ được và thường mơ những thứ đáng sợ.</p>
+          <p class="text-gray-700 mb-4 text-sm leading-relaxed">Được hướng dẫn chỉ 1 bước thôi, sáng thêm từ 2 đến 10 phút.</p>
+          <blockquote class="bg-white rounded-xl p-4 border-l-4 border-purple-400">
+            <p class="text-gray-700 italic text-sm">"Tối không cần tắt điện thoại nữa, đến giờ là nằm xuống ngủ thôi, ngủ 1 mạch tới sáng luôn chứ bình thường là xem "tổng tài" 2, 3 giờ sáng."</p>
+            <p class="text-xs text-gray-500 mt-2">Sau 7 ngày</p>
+          </blockquote>
+          <p class="text-sm text-gray-600 mt-3 italic">Với người sức khỏe ổn như cô Linh, chỉ cần bắt đầu từ 1 đến 2 nghi thức là đủ thấy kết quả. Với người đang kiệt sức hơn, cả 4 bước sẽ hỗ trợ nhau và hiệu quả rõ hơn nhiều.</p>
+        </div>
+
+        <div class="bg-green-50 rounded-2xl p-6 border border-green-100">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="testimonial-ban-son.jpg" alt="Bạn Sơn" class="w-14 h-14 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-gray-900">Bạn Sơn, 27 tuổi</p>
+              <p class="text-sm text-gray-500">Luôn trằn trọc 1, 2 giờ sáng, sáng dậy uể oải, lờ đờ</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4 text-sm leading-relaxed">Bạn tâm sự rằng không có động lực để làm gì cả dù rất muốn thay đổi cuộc sống hiện tại.</p>
+          <blockquote class="bg-white rounded-xl p-4 border-l-4 border-green-400">
+            <p class="text-gray-700 italic text-sm">"Ngủ dậy có tinh thần hơn, đi làm không thấy uể oải như trước, đi ngủ dễ vô giấc hơn."</p>
+            <p class="text-xs text-gray-500 mt-2">Sau 7 ngày</p>
+          </blockquote>
+        </div>
+
+      </div>
+
+      <div class="mt-10 text-center">
+        <p class="text-gray-700 leading-relaxed mb-2">Mình, cô Linh, và Sơn không phải những người có kỷ luật mạnh mẽ, không cần cày video động lực dài cả tiếng đồng hồ.</p>
+        <p class="text-gray-700 leading-relaxed mb-4">Và cả không cần 1 kế hoạch to lớn.</p>
+        <p class="text-xl font-bold text-gray-900 mb-2">Chỉ bắt đầu với vài phút và mọi thứ thay đổi.</p>
+        <p class="text-lg text-primary font-semibold">Nếu mình, cô Linh, Sơn, làm được, liệu bạn có làm được không?</p>
+      </div>
+
+      <div class="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-6 text-center">
+        <p class="text-gray-700 leading-relaxed mb-2">Mình tạo ra hệ thống này vì mình biết có rất nhiều người đang ở đúng chỗ mình từng ở.</p>
+        <p class="text-gray-700 leading-relaxed mb-4">Mệt mỏi, stress mỗi ngày, trằn trọc hàng đêm rồi sáng thức dậy trong vật vã, và dù cố thử nhiều cách rồi nhưng đều chẳng ăn thua.</p>
+        <p class="text-gray-700 mb-2">Không phải bạn thiếu ý chí đâu.</p>
+        <p class="text-gray-700 mb-3">Câu trả lời là bạn chưa chạm tới công tắc giúp não được nghỉ ngơi.</p>
+        <p class="text-xl font-bold text-primary">Mình chỉ cho bạn đúng công tắc đó, bạn chỉ cần gạt nó lên thôi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE PACING -->
+  <section style="background: linear-gradient(135deg, #3d1a2e 0%, #7c3c5c 100%);" class="py-14 px-4 sm:px-6 lg:px-8 text-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-amber-300">Hãy Thử Tưởng Tượng Một Ngày Của Bạn Sau 2 Tuần Nữa</h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Bạn thức dậy 5h40 sáng với đầu óc tỉnh táo, hết đau đầu mệt mỏi, người nhẹ bẫng như vừa được đi spa về ấy.</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Sự "đanh đá" hay năng lượng tiêu cực vô cớ do mệt mỏi sẽ biến mất, thay vào đó là sự ấm áp, dễ chịu.</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Lòng bạn bình yên lắm, cảm thấy đời tươi đẹp hẳn</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Bạn giải quyết công việc nhanh hơn, ít sai sót hơn và sáng tạo hơn</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Khả năng tập trung, ghi nhớ và ra quyết định tăng vọt giúp bạn nắm bắt cơ hội tốt hơn</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Đồng thời tiết kiệm được đống tiền thuốc men, thực phẩm chức năng, các buổi trị liệu và cả những khoản chi tiêu "bốc đồng" do tâm lý mệt mỏi gây ra nữa</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100 font-semibold">Điều đặc biệt nhất bạn nhận được chính là sự tự do tự tại trong tâm trí và quyền kiểm soát cuộc đời bạn.</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Bạn không còn phải đi ngủ với nỗi sợ "liệu đêm nay có thức trắng?", không còn phải thức dậy với cảm giác kiệt quệ.</span></li>
+        <li class="flex items-start gap-3"><span class="text-amber-400 text-xl flex-shrink-0 mt-0.5">✨</span><span class="text-rose-100">Bạn cảm nhận được hạnh phúc từ những điều rất nhỏ nhặt và có đủ năng lượng để thực hiện bất kỳ mục tiêu nào bạn muốn.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="path-bad rounded-2xl p-6">
+          <h3 class="font-bold text-red-700 text-lg mb-4 text-center">Bạn sẽ không còn</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2 text-red-700 text-sm"><span class="flex-shrink-0">✗</span><span>Nằm lướt điện thoại chờ tới lúc không chịu nổi mới thiếp đi</span></li>
+            <li class="flex items-start gap-2 text-red-700 text-sm"><span class="flex-shrink-0">✗</span><span>Nổi điên với những suy nghĩ liên tục nhảy múa trong đầu</span></li>
+            <li class="flex items-start gap-2 text-red-700 text-sm"><span class="flex-shrink-0">✗</span><span>Tắt báo thức 3 lần rồi vẫn không muốn ra khỏi giường</span></li>
+            <li class="flex items-start gap-2 text-red-700 text-sm"><span class="flex-shrink-0">✗</span><span>Cáu gắt vì chuyện nhỏ rồi sau đó tự trách</span></li>
+            <li class="flex items-start gap-2 text-red-700 text-sm"><span class="flex-shrink-0">✗</span><span>Nghỉ ngơi, đi chơi xả stress về còn mệt mỏi hơn</span></li>
+            <li class="flex items-start gap-2 text-red-700 text-sm"><span class="flex-shrink-0">✗</span><span>Đứng trước gương thấy khuôn mặt căng cứng xa lạ</span></li>
+          </ul>
+        </div>
+        <div class="path-good rounded-2xl p-6">
+          <h3 class="font-bold text-green-700 text-lg mb-4 text-center">Bạn sẽ có</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2 text-green-700 text-sm"><span class="flex-shrink-0">✓</span><span>Giấc ngủ sâu suốt đêm</span></li>
+            <li class="flex items-start gap-2 text-green-700 text-sm"><span class="flex-shrink-0">✓</span><span>Thức dậy tự nhiên trước cả báo thức</span></li>
+            <li class="flex items-start gap-2 text-green-700 text-sm"><span class="flex-shrink-0">✓</span><span>Đầu óc tỉnh táo</span></li>
+            <li class="flex items-start gap-2 text-green-700 text-sm"><span class="flex-shrink-0">✓</span><span>Làm việc nhanh gấp đôi, ra quyết định sáng suốt hơn</span></li>
+            <li class="flex items-start gap-2 text-green-700 text-sm"><span class="flex-shrink-0">✓</span><span>Bình tĩnh lại nhanh hơn khi gặp chuyện khó chịu</span></li>
+            <li class="flex items-start gap-2 text-green-700 text-sm"><span class="flex-shrink-0">✓</span><span>Lấy lại quyền làm chủ cuộc đời mình</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-700 space-y-3">
+        <p class="font-semibold">Đây không phải viễn cảnh xa vời.</p>
+        <p>Nó cũng không phải là điều kỳ diệu mang tính tâm linh</p>
+        <p>Mà là khi "hệ thống làm dịu" được bật lên, một sự tái cấu trúc sinh học và hóa học bên trong bộ não của bạn cũng tự khởi động.</p>
+        <p class="text-primary font-semibold">Bạn đã vô tình kích hoạt chế độ "vận hành tối ưu" của cơ thể mà không cần hiểu sâu về nó.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY EVERYTHING FAILED -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-amber-300">Tại sao mọi thứ bạn đã thử đều vô dụng</h2>
+      <p class="text-xl text-gray-300 mb-6">Bạn đã bị "đồng hóa" với sự kích thích liên tục.</p>
+      <p class="text-gray-300 leading-relaxed mb-4">Do thói quen lướt điện thoại từ sáng đến đêm, xem phim, chơi game, check thông báo... bạn đã vô tình huấn luyện cho não bộ của mình một thói quen, cứ mỗi 5-10 giây là phải có một thông tin mới nạp vào.</p>
+      <div class="bg-white/10 rounded-xl p-5 mb-6">
+        <p class="text-white font-semibold mb-2">Đây không phải vấn đề của ý chí.</p>
+        <p class="text-white font-semibold mb-3">Cũng không phải vì bạn lười.</p>
+        <p class="text-gray-300 mb-2">Mà vì não bạn chưa bao giờ nhận được tín hiệu an toàn.</p>
+        <p class="text-gray-300">Và khi chưa dừng được trạng thái kích thích liên tục đó, uống trà thảo mộc, nghe nhạc thiền, cố ngủ sớm, lập thời gian biểu, tất cả đều thất bại.</p>
+      </div>
+      <p class="text-gray-300 mb-2">Không phải vì những thứ đó sai.</p>
+      <p class="text-gray-300 mb-2">Mà vì chúng đang giải quyết phần ngọn trong khi gốc rễ chưa được chạm tới.</p>
+      <p class="text-amber-300 font-bold text-lg">Đây là điểm mà Hệ Thống Hồi Phục Năng Lượng khác.</p>
+    </div>
+  </section>
+
+  <!-- SYSTEM EXPLANATION -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-4 text-primary">HỆ THỐNG HỒI PHỤC NĂNG LƯỢNG HOẠT ĐỘNG NHƯ THẾ NÀO</h2>
+      <p class="text-center text-gray-600 mb-10">Đây là hệ thống 4 bước đơn giản, mỗi cái chỉ 2 – 5 phút được thiết kế để đưa tâm trí ra khỏi trạng thái căng thẳng liên tục và giúp cơ thể bắt đầu hồi phục từ bên trong.</p>
+
+      <h3 class="text-xl font-bold text-center mb-8 text-gray-800">Ba bí mật của hệ thống:</h3>
+
+      <div class="secret-card bg-amber-50 rounded-r-2xl p-6 mb-6">
+        <h4 class="font-black text-amber-700 text-lg mb-3">BÍ MẬT 1 — HẠ NHIỆT: Ngủ dễ hơn ngay từ đêm đầu tiên</h4>
+        <p class="text-gray-700 mb-3">Bạn sẽ biết cách cho bộ não khởi động từ từ và tắt chế độ "Báo động" (Cortisol)</p>
+        <p class="text-gray-700 mb-3">Khi bạn không kích động hệ thần kinh từ sáng, bạn sẽ ít tích tụ áp lực hơn. Đến đêm, cơ thể không bị rơi vào trạng thái tỉnh táo giả tạo nên dễ đi vào giấc ngủ.</p>
+        <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+          <p class="text-red-700 text-sm"><span class="font-bold">Nếu bỏ qua bước này:</span> bạn tiếp tục nằm xuống mà không ngủ được, tiếp tục thức đến 1 – 2 giờ sáng và hôm sau lại bắt đầu với cơ thể chưa hồi phục.</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 rounded-r-2xl p-6 mb-6" style="border-left: 4px solid #3b82f6;">
+        <h4 class="font-black text-blue-700 text-lg mb-3">BÍ MẬT 2 — KHOẢNG TRỐNG TINH THẦN: Nghỉ thật sự trong ngày, không chỉ ngừng làm việc</h4>
+        <p class="text-gray-700 mb-3">Bí mật này giải quyết thứ phá hỏng ban ngày: Hành động này giữ cho não ở mức vừa đủ để tỉnh táo, chứ không biến thành sự hoảng loạn hay quá tải suy nghĩ.</p>
+        <p class="text-gray-700 mb-3">Bạn sẽ biết cách tạo khoảng lặng thật sự cho đầu óc ngay giữa ngày làm việc, ngay trong lúc ăn trưa, ngay cả khi chỉ có 5 phút.</p>
+        <p class="text-gray-700 mb-3">Giúp cơ thể nhận biết rõ ràng "đây là ban ngày", từ đó sẽ tự động kích hoạt chế độ "đây là ban đêm" một cách chính xác hơn khi đến giờ ngủ, giúp bạn ngủ sâu giấc hơn.</p>
+        <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+          <p class="text-red-700 text-sm"><span class="font-bold">Nếu bỏ qua bí mật này:</span> bạn tiếp tục cảm giác lo âu, bồn chồn cả ngày mà không giải quyết được bao nhiêu, và nghỉ xong vẫn không thấy nạp lại được năng lượng.</p>
+        </div>
+      </div>
+
+      <div class="bg-green-50 rounded-r-2xl p-6 mb-8" style="border-left: 4px solid #22c55e;">
+        <h4 class="font-black text-green-700 text-lg mb-3">BÍ MẬT 3 — CHIẾN THẮNG SỚM: bạn biết cách kiểm soát Dopamine một cách lành mạnh</h4>
+        <p class="text-gray-700 mb-3">Bí mật này giúp não bộ thoát khỏi trạng thái hoang mang, vô định (nguyên nhân khiến bạn thèm lướt điện thoại hay mua sắm vô bổ)</p>
+        <p class="text-gray-700 mb-3">Khi bạn viết xuống và gạch đi một việc đã hoàn thành, não bạn sẽ tiết ra một lượng Dopamine vừa phải kèm theo cảm giác tự hào và năng lực kiểm soát cuộc sống.</p>
+        <p class="text-gray-700 mb-3">Nó giúp não thích nghi với việc "thỏa mãn từ hành động có ích" thay vì "thỏa mãn lười biếng từ màn hình".</p>
+        <p class="text-gray-700 mb-3">Bạn sẽ không còn cảm giác bứt rứt vì "nợ công việc".</p>
+        <p class="text-gray-700 mb-3">Bạn bước lên giường với tâm thế của một người chiến thắng, không còn những suy nghĩ lo âu, cắt đứt chuỗi suy nghĩ miên man ban đêm.</p>
+        <p class="text-gray-700 font-semibold">Cảm giác đó tích lũy. Và dần dần, bạn bắt đầu giành lại khả năng kiểm soát cuộc sống của mình.</p>
+      </div>
+
+      <div class="text-white rounded-2xl p-6 mb-8 text-center" style="background:#4a1a38;">
+        <p class="text-rose-200 mb-3">Ba bí mật này không cần ý chí lớn để thực hiện. Không cần thay đổi toàn bộ lịch sinh hoạt. Không cần hoàn hảo từ ngày đầu.</p>
+        <p class="text-amber-300 font-bold text-lg">Chỉ cần 4 bước nhỏ, 2 – 5 phút, thực hiện đúng thứ tự và cơ thể bạn sẽ tự biết cách phục hồi.</p>
+        <p class="text-rose-200 mt-2">Nó sẽ là chiếc mỏ neo giữ cho tâm trí bạn bình yên giữa một thế giới quá nhiều cám dỗ.</p>
+      </div>
+
+      <div class="highlight-box rounded-xl p-5 text-center">
+        <p class="font-bold text-gray-900">Từ ngày 30+: vào giấc dễ dàng, đôi mắt sáng hơn, khuôn mặt nhẹ hơn, người xung quanh thay đổi cách đối xử mà không ai được thông báo gì. Làm cả ngày không mệt. Tối vẫn còn năng lượng.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE ARE YOU NOW? -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center text-primary">BẠN ĐANG Ở ĐÂU NGAY LÚC NÀY?</h2>
+      <p class="text-gray-700 mb-4">Có thể bạn đang:</p>
+      <ul class="space-y-3 mb-6">
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-primary flex-shrink-0 mt-1">●</span><span>Nằm xuống đã 30 phút nhưng hàng đống suy nghĩ đang nhảy múa trong đầu</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-primary flex-shrink-0 mt-1">●</span><span>Ngồi trước màn hình nhưng sau 2 tiếng nhìn lại chẳng xử lý được bao nhiêu</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-primary flex-shrink-0 mt-1">●</span><span>Tối thì tỉnh táo, ngày lại ngủ gật</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-primary flex-shrink-0 mt-1">●</span><span>Bực bội vì một chuyện rất nhỏ</span></li>
+        <li class="flex items-start gap-3 text-gray-700"><span class="text-primary flex-shrink-0 mt-1">●</span><span>Đã thử ngủ sớm hơn nhưng nằm mãi không ngủ được</span></li>
+      </ul>
+      <p class="font-bold text-lg text-gray-900 mb-2">Đúng không?</p>
+      <p class="text-gray-700 mb-2">Mình hiểu cảm giác đó.</p>
+      <p class="text-gray-700 mb-4">Vì mình cũng từng ở đó.</p>
+      <p class="text-gray-700 mb-2">Và mình biết chắc: vấn đề không phải ý chí của bạn.</p>
+      <p class="text-gray-700 mb-4">Không phải tính cách của bạn.</p>
+      <p class="text-primary font-semibold">Thứ bạn cần không phải thêm thông tin, không phải thêm kỷ luật mà là một hệ thống đơn giản mà hiệu quả đủ để cơ thể tự hồi phục.</p>
+    </div>
+  </section>
+
+  <!-- HOW THE PROGRAM WORKS -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-4 text-primary">ĐÂY LÀ CÁCH CHƯƠNG TRÌNH HOẠT ĐỘNG</h2>
+      <p class="text-center text-gray-600 mb-3">Hệ thống này được thiết kế đơn giản, bạn chỉ cần 2 phút cho mỗi việc là đủ để nhận được kết quả.</p>
+      <p class="text-center font-semibold text-primary mb-10">Sau 14 ngày, bạn sẽ có: ngủ sâu, sáng dậy tỉnh táo, năng lượng dồi dào cả ngày, cảm giác tự hào và năng lực kiểm soát cuộc sống.</p>
+
+      <h3 class="text-xl font-bold text-center mb-4 text-gray-900">Hệ Thống Hồi Phục Năng Lượng được chia làm 4 tầng rõ ràng</h3>
+      <p class="text-center text-gray-500 mb-8 italic text-sm">Dưới đây là toàn bộ những gì bạn sẽ nhận được</p>
+
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 mb-6 border border-amber-200">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-black text-xl flex-shrink-0">1</div>
+          <div>
+            <p class="font-black text-amber-800 text-lg">Tầng 1 — Hạ nhiệt</p>
+            <p class="text-amber-600 text-sm">Cứu bộ não khỏi cú sốc "Dopamine giá rẻ"</p>
+          </div>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm">Ở tầng này, ta sẽ tập trung làm dịu tâm trí, đưa não về tần số thư giãn và tỉnh táo.</p>
+        <p class="font-semibold text-gray-800 text-sm mb-3">Bạn sẽ học được cách:</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-amber-500 flex-shrink-0">→</span><span>Chặn đứng một "cơn lũ" kích thích (drama, thông báo, video ngắn) tràn vào não ngay sáng sớm</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-amber-500 flex-shrink-0">→</span><span>Dập tắt cơn thèm khát những kích thích mạnh hơn, dẫn đến bứt rứt, mất tập trung và thích mua sắm vô bổ trong ngày</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-amber-500 flex-shrink-0">→</span><span>Giữ tâm trí ở mức vừa đủ để tỉnh táo, chứ không biến thành sự hoảng loạn hay quá tải suy nghĩ</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-amber-500 flex-shrink-0">→</span><span>Giữ mức Dopamine (hormone hạnh phúc) ở trạng thái cân bằng, giúp bạn lấy lại khả năng tận hưởng những điều bình thường</span></li>
+        </ul>
+        <p class="mt-3 text-amber-700 font-semibold text-sm">Chỉ 2 ngày đầu tiên, bạn sẽ không còn trằn trọc với cả đống suy nghĩ ngổn ngang mỗi lần nhắm mắt lại.</p>
+      </div>
+
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 mb-6 border border-blue-200">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-black text-xl flex-shrink-0">2</div>
+          <p class="font-black text-blue-800 text-lg">Tầng 2 — Đánh thức năng lượng vật lý</p>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm">Khi mới ngủ dậy, não bộ còn bị bao phủ bởi một làn sương mù gọi là quán tính giấc ngủ (Sleep Inertia). Ta sẽ cần phát ra tín hiệu vật lý mạnh mẽ đến tâm trí: "Ngày mới bắt đầu rồi, thức dậy thôi!".</p>
+        <p class="font-semibold text-gray-800 text-sm mb-3">Điều bạn nhận được sau tầng này:</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-blue-500 flex-shrink-0">→</span><span>Tăng cường lưu thông máu và oxy lên não</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-blue-500 flex-shrink-0">→</span><span>Thiết lập lại Nhịp sinh học (Circadian Rhythm) của cơ thể</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-blue-500 flex-shrink-0">→</span><span>Tỉnh táo thật sự bằng năng lượng nội tại, chứ không phải tỉnh táo giả tạo bằng ánh sáng xanh của điện thoại</span></li>
+        </ul>
+        <p class="mt-3 text-blue-700 font-semibold text-sm">Từ ngày 3 - 5, cảm giác lờ đờ, ngái ngủ do (hormone melatonin còn sót lại) được phá tan.</p>
+      </div>
+
+      <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 mb-6 border border-green-200">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-black text-xl flex-shrink-0">3</div>
+          <p class="font-black text-green-800 text-lg">Tầng 3 — Gặt hái chiến thắng bằng "Sự thỏa mãn lành mạnh"</p>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm">Bạn sẽ biết cách quản trị mục tiêu và kiểm soát Dopamine lành mạnh.</p>
+        <p class="font-semibold text-gray-800 text-sm mb-3">Điều bạn nhận được:</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">→</span><span>Tạo "Đà" cho cả ngày — hứng khởi để tiếp tục làm những việc khác trong ngày thay vì cảm giác uể oải</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">→</span><span>Loại bỏ áp lực và sự trì hoãn</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-green-500 flex-shrink-0">→</span><span>Gửi một thông điệp mạnh mẽ đến chính mình: "Tôi là người nói được làm được" giúp bạn dám đối mặt với những thử thách lớn hơn trong cuộc sống</span></li>
+        </ul>
+        <p class="mt-3 text-green-700 font-semibold text-sm">Từ ngày 5 trở đi, bạn sẽ chủ động đi ngủ sớm vì không còn bị môi trường xung quanh kích thích. Sáng bạn thức dậy trước cả báo thức nhờ giấc ngủ sâu tối hôm trước.</p>
+      </div>
+
+      <div class="bg-gradient-to-r from-purple-50 to-violet-50 rounded-2xl p-6 mb-8 border border-purple-200">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-black text-xl flex-shrink-0">4</div>
+          <p class="font-black text-purple-800 text-lg">Tầng 4 — Định hướng tâm trí — cài hệ điều hành mới</p>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm">Ta sẽ cắm một cái đích đến rõ ràng trên bản đồ bạn đang đi đến. Khi não bộ nhìn thấy cái đích đó, nó sẽ tự động kích thích động lực, sự tập trung và kiên trì để bạn hành động trong ngày, thay vì để bạn lọt vào những cái bẫy tiêu khiển vô bổ.</p>
+        <p class="font-semibold text-gray-800 text-sm mb-3">Sau tầng này, bạn sẽ biết cách:</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-purple-500 flex-shrink-0">→</span><span>Tự động tạo ra "Dopamine nội sinh" dài hạn (vui vẻ, hạnh phúc từ những điều nhỏ nhặt)</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-purple-500 flex-shrink-0">→</span><span>Tự động hướng về những điều tốt đẹp</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-purple-500 flex-shrink-0">→</span><span>Bạn làm việc mượt mà hơn, ít tốn năng lượng hơn và không còn bị kiệt sức vào cuối ngày</span></li>
+          <li class="flex items-start gap-2 text-sm text-gray-700"><span class="text-purple-500 flex-shrink-0">→</span><span>Giảm tối đa sự trì hoãn và nỗi sợ hãi</span></li>
+        </ul>
+        <p class="mt-3 text-purple-700 font-semibold text-sm">Sau ngày 7, bạn sẽ giảm bớt sự nhạy cảm với các drama hay năng lượng độc hại. Trạng thái dồi dào năng lượng mạnh mẽ nhất từ ngày này.</p>
+      </div>
+
+      <div class="text-white rounded-2xl p-6 text-center" style="background:#4a1a38;">
+        <p class="text-rose-200 mb-3">4 tầng này hoạt động đồng thời và hỗ trợ lẫn nhau. Đưa cơ thể và tâm trí về trạng thái "vận hành tối ưu" bằng con đường ngắn nhất.</p>
+        <p class="text-white font-semibold mb-2">Quan trọng nhất, bạn không cần trở thành 1 chuyên gia thần kinh học</p>
+        <p class="text-amber-300 font-bold">Bạn chỉ cần làm đúng 4 bước nhỏ — chỉ cần 2 phút để hoàn thành, không cần động não — mà mình đã đóng gói ở đây.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUSES -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-amber-600 font-semibold uppercase tracking-widest text-sm mb-2">Chưa hết!</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Đây là những quyền lợi tặng kèm, ngay khi bạn đăng ký</h2>
+      </div>
+
+      <div class="text-white rounded-2xl p-6 mb-6" style="background:#4a1a38;">
+        <p class="text-amber-300 font-bold text-lg mb-2">GIẢI MÃ BÍ MẬT (video 1):</p>
+        <p class="text-white font-semibold">"Tại sao bạn không dám ngủ và cách phá vỡ vòng lặp này trong 48 giờ"</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Bonus 1 table -->
+        <div class="bg-white rounded-2xl shadow-sm border border-pink-100 overflow-hidden">
+          <div class="px-5 pt-5 pb-3">
+            <p class="font-bold text-gray-900 text-base mb-3">Bonus 1 — Template: Người đồng hành không phán xét</p>
+          </div>
+          <table class="w-full text-sm border-t border-gray-100">
+            <tbody>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium w-1/3">Nội dung</td>
+                <td class="px-5 py-3 text-gray-700">"Cách dùng AI làm người đồng hành, không phán xét, không bỏ cuộc, luôn ở đó khi bạn cần". Mình đã prompt sẵn, bạn chỉ cần sao chép và dán.</td>
+              </tr>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium">Kèm theo</td>
+                <td class="px-5 py-3 text-gray-700">Bảng theo dõi 4 bước, đánh dấu mỗi ngày, tạo giao kèo với người đồng hành.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 text-gray-500 font-medium">Giá trị</td>
+                <td class="px-5 py-3"><span class="strikethrough text-gray-400 mr-2">79.000đ</span><span class="text-green-600 font-bold">MIỄN PHÍ</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Bonus 2 table -->
+        <div class="bg-white rounded-2xl shadow-sm border border-pink-100 overflow-hidden">
+          <div class="px-5 pt-5 pb-3">
+            <p class="font-bold text-gray-900 text-base mb-3">Bonus 2 — Template Chiến thuật "Chiến thắng sớm"</p>
+          </div>
+          <table class="w-full text-sm border-t border-gray-100">
+            <tbody>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium w-1/3">Nội dung</td>
+                <td class="px-5 py-3 text-gray-700">Format cụ thể: việc gì, tại sao, làm như thế nào.</td>
+              </tr>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium">Kèm theo</td>
+                <td class="px-5 py-3 text-gray-700">Hướng dẫn xử lý khi bị lệch nhịp và kế hoạch ứng phó cho 5 tình huống hay xảy ra nhất. Cách rút ngắn còn 8 phút, để không có lý do nào để bỏ.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 text-gray-500 font-medium">Giá trị</td>
+                <td class="px-5 py-3"><span class="strikethrough text-gray-400 mr-2">79.000đ</span><span class="text-green-600 font-bold">MIỄN PHÍ</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Bonus 3 table -->
+        <div class="bg-white rounded-2xl shadow-sm border border-amber-200 overflow-hidden">
+          <div class="px-5 pt-5 pb-3">
+            <p class="font-bold text-gray-900 text-base mb-3">Bonus 3 — 3 tháng tham gia nhóm hỗ trợ</p>
+          </div>
+          <table class="w-full text-sm border-t border-gray-100">
+            <tbody>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium w-1/3">Nội dung</td>
+                <td class="px-5 py-3 text-gray-700">Nơi bạn báo cáo tiến trình mỗi ngày, đặt câu hỏi khi gặp khó khăn, và nhìn thấy những người giống mình cũng đang thay đổi.</td>
+              </tr>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium">Tại sao</td>
+                <td class="px-5 py-3 text-gray-700">Vì duy trì một mình rất khó, nhưng duy trì cùng người khác thì khác hẳn.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 text-gray-500 font-medium">Giá trị</td>
+                <td class="px-5 py-3"><span class="text-amber-600 font-bold">Vô giá</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Bonus 4 table -->
+        <div class="bg-white rounded-2xl shadow-sm border border-pink-100 overflow-hidden">
+          <div class="px-5 pt-5 pb-3">
+            <p class="font-bold text-gray-900 text-base mb-3">Bonus 4 — File Tiến trình cá nhân hóa</p>
+          </div>
+          <table class="w-full text-sm border-t border-gray-100">
+            <tbody>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium w-1/3">Nội dung</td>
+                <td class="px-5 py-3 text-gray-700">Bạn sẽ được hướng dẫn cách làm phù hợp với thời gian của mình.</td>
+              </tr>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium">Kèm theo</td>
+                <td class="px-5 py-3 text-gray-700">Cách để tự kiểm tra được tiến bộ nhỏ mỗi ngày và bắt đầu dám nói không với những thứ lấy đi năng lượng của bạn.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 text-gray-500 font-medium">Giá trị</td>
+                <td class="px-5 py-3"><span class="strikethrough text-gray-400 mr-2">129.000đ</span><span class="text-green-600 font-bold">MIỄN PHÍ</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Bonus 5 table -->
+        <div class="bg-white rounded-2xl shadow-sm border border-pink-100 overflow-hidden">
+          <div class="px-5 pt-5 pb-3">
+            <p class="font-bold text-gray-900 text-base mb-3">Bonus 5 — Cập nhật miễn phí</p>
+          </div>
+          <table class="w-full text-sm border-t border-gray-100">
+            <tbody>
+              <tr class="border-b border-gray-50">
+                <td class="px-5 py-3 text-gray-500 font-medium w-1/3">Nội dung</td>
+                <td class="px-5 py-3 text-gray-700">Mỗi khi có điều chỉnh mới trong lộ trình, bạn được access miễn phí.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 text-gray-500 font-medium">Giá trị</td>
+                <td class="px-5 py-3"><span class="text-amber-600 font-bold">Vô giá</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE STACK -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">Đây là tất cả những gì bạn nhận được:</h2>
+
+      <div class="space-y-3 mb-8">
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Hệ Thống Hồi Phục Năng Lượng (tài liệu hướng dẫn đầy đủ)</span><span class="text-gray-500 font-semibold text-sm flex-shrink-0 ml-4">699.000 đ</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Lịch 14 ngày cụ thể từng bước</span><span class="text-gray-500 font-semibold text-sm flex-shrink-0 ml-4">199.000đ</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Hướng dẫn thả lỏng cơ thể trước khi ngủ</span><span class="text-gray-500 font-semibold text-sm flex-shrink-0 ml-4">79.000đ</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">3 giai đoạn hoàn chỉnh</span><span class="text-gray-500 font-semibold text-sm flex-shrink-0 ml-4">499.000đ</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Bonus 1: Người đồng hành không phán xét</span><span class="text-gray-500 font-semibold text-sm flex-shrink-0 ml-4">79.000 đ</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Bonus 2 — Template Chiến thuật "Chiến thắng sớm"</span><span class="text-gray-500 font-semibold text-sm flex-shrink-0 ml-4">79.000 đ</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Bonus 3: 3 tháng tham gia nhóm hỗ trợ</span><span class="text-amber-600 font-semibold text-sm flex-shrink-0 ml-4">Vô giá</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Bonus 4: File Tiến trình cá nhân hóa</span><span class="text-gray-500 font-semibold text-sm flex-shrink-0 ml-4">129.000 đ</span></div>
+        <div class="flex items-center justify-between py-3 border-b border-gray-100"><span class="text-gray-700 text-sm">Bonus 5: Update miễn phí. Mỗi khi hệ thống được nâng cấp, bạn được cập nhật miễn phí</span><span class="text-amber-600 font-semibold text-sm flex-shrink-0 ml-4">Vô giá</span></div>
+      </div>
+
+      <div class="highlight-box rounded-2xl p-6 text-center">
+        <p class="text-gray-600 text-lg mb-1">TỔNG GIÁ TRỊ: <span class="strikethrough font-bold">1.763.000 đ</span></p>
+        <p class="text-gray-700 mb-4">Nhưng hôm nay, bạn chỉ cần đầu tư:</p>
+        <p class="text-6xl font-black text-orange-600 mb-2">229.000đ</p>
+        <p class="text-green-700 font-semibold">Tiết kiệm ngay 1.534.000 đ</p>
+      </div>
+
+      <p class="mt-6 text-gray-600 text-center text-sm leading-relaxed">Vì đây là đợt mở bán đầu tiên, mình muốn lấy phản hồi thật từ những người đầu tiên tham gia, và mình biết khi có người thật sự thay đổi, câu chuyện của họ còn có giá trị hơn bất kỳ chiến dịch quảng cáo nào. Sau đợt beta, mức giá sẽ tăng dần theo từng đợt.</p>
+
+      <div id="cta-main" class="mt-8 text-center">
+        <a href="#" class="block gradient-cta text-white px-8 py-5 rounded-2xl text-2xl font-black shadow-2xl cta-pulse hover:opacity-90 transition mb-6 max-w-md mx-auto">
+          THAM GIA NGAY - CHỈ 229.000Đ
+        </a>
+      </div>
+
+      <div class="mt-4 bg-amber-50 border border-amber-200 rounded-2xl p-6 max-w-xl mx-auto">
+        <p class="text-gray-900 font-bold mb-3 text-center">Cam kết hoàn tiền 100% trong 30 ngày.</p>
+        <p class="text-gray-700 text-sm mb-2">Nếu bạn làm đủ 4 bước mỗi ngày trong 14 ngày mà không thấy bất kỳ thay đổi nào về giấc ngủ và năng lượng, mình hoàn tiền 100%, không hỏi thêm câu nào.</p>
+        <p class="text-gray-700 text-sm mt-2">Mình tin tuyệt đối vào hệ thống này vì mình đã đi qua nó.</p>
+        <p class="text-gray-700 text-sm mt-1">Và những người mình hướng dẫn đều có kết quả tích cực.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COST OF POOR SLEEP -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center text-white">Cái Giá Thật Sự Của Việc Mất Ngủ</h2>
+      <p class="text-gray-400 text-center mb-8 text-sm">Có thể bạn chưa bao giờ cộng lại nhưng nó đang tốn của bạn nhiều hơn bạn nghĩ, mỗi tháng, đều đặn.</p>
+      <div class="space-y-3 mb-8">
+        <div class="flex items-center justify-between bg-white/5 rounded-xl p-4"><span class="text-gray-300 text-sm">Thuốc ngủ / melatonin / TPCN hỗ trợ ngủ</span><span class="text-red-400 font-semibold text-sm flex-shrink-0 ml-4">300.000đ – 2.000.000đ/tháng</span></div>
+        <div class="flex items-center justify-between bg-white/5 rounded-xl p-4"><span class="text-gray-300 text-sm">Cà phê / nước tăng lực để chống mệt</span><span class="text-red-400 font-semibold text-sm flex-shrink-0 ml-4">500.000đ – 1.500.000đ/tháng</span></div>
+        <div class="flex items-center justify-between bg-white/5 rounded-xl p-4"><span class="text-gray-300 text-sm">Skincare chống lão hóa, quầng thâm, nếp nhăn mắt</span><span class="text-red-400 font-semibold text-sm flex-shrink-0 ml-4">1.000.000đ – 5.000.000đ+</span></div>
+        <div class="flex items-center justify-between bg-white/5 rounded-xl p-4"><span class="text-gray-300 text-sm">Makeup che khuyết điểm, da thiếu sức sống</span><span class="text-red-400 font-semibold text-sm flex-shrink-0 ml-4">500.000đ – 2.000.000đ</span></div>
+        <div class="flex items-center justify-between bg-white/5 rounded-xl p-4"><span class="text-gray-300 text-sm">Yoga / thiền / massage để "cứu năng lượng"</span><span class="text-red-400 font-semibold text-sm flex-shrink-0 ml-4">1.000.000đ – 10.000.000đ+</span></div>
+        <div class="flex items-center justify-between bg-white/5 rounded-xl p-4"><span class="text-gray-300 text-sm">Khóa học productivity nhưng không đủ năng lượng để áp dụng</span><span class="text-red-400 font-semibold text-sm flex-shrink-0 ml-4">500.000đ – 20.000.000đ+</span></div>
+      </div>
+      <div class="bg-white/10 rounded-xl p-5 mb-6">
+        <p class="text-gray-300 font-semibold mb-3">Và còn chưa tính những thứ không đo được bằng tiền:</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-gray-400 text-sm"><span class="flex-shrink-0">—</span><span>hiệu suất làm việc mất đi mỗi ngày</span></li>
+          <li class="flex items-start gap-2 text-gray-400 text-sm"><span class="flex-shrink-0">—</span><span>những cuối tuần chỉ để nằm hồi phục thay vì sống thật sự</span></li>
+          <li class="flex items-start gap-2 text-gray-400 text-sm"><span class="flex-shrink-0">—</span><span>sự cáu gắt trong các mối quan hệ</span></li>
+          <li class="flex items-start gap-2 text-gray-400 text-sm"><span class="flex-shrink-0">—</span><span>cảm giác luôn mệt khi thức dậy</span></li>
+          <li class="flex items-start gap-2 text-gray-400 text-sm"><span class="flex-shrink-0">—</span><span>và việc cơ thể dần quen với trạng thái kiệt sức như thể đó là "bình thường."</span></li>
+        </ul>
+      </div>
+      <p class="text-gray-400 text-center text-sm mb-8">Hầu hết mọi người tiếp tục trả những khoản đó mỗi tháng vì họ đang xử lý triệu chứng, không phải gốc rễ.</p>
+      <div class="text-center">
+        <a href="#cta-main" class="inline-block gradient-cta text-white px-8 py-4 rounded-xl text-lg font-black shadow-xl cta-pulse hover:opacity-90 transition">
+          THAM GIA NGAY - CHỈ 229.000Đ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO PATHS -->
+  <section class="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">BẠN ĐANG ĐỨNG TRƯỚC HAI CON ĐƯỜNG</h2>
+
+      <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+        <!-- Header row -->
+        <div class="grid grid-cols-2">
+          <div class="path-bad p-4 text-center border-r border-red-200">
+            <span class="text-red-700 font-black text-base">✗ Lựa chọn 1</span>
+            <p class="text-red-600 text-sm font-medium mt-1">Tiếp tục như hiện tại</p>
+          </div>
+          <div class="path-good p-4 text-center">
+            <span class="text-green-700 font-black text-base">✓ Lựa chọn 2</span>
+            <p class="text-green-600 text-sm font-medium mt-1">Bắt đầu tối nay</p>
+          </div>
+        </div>
+
+        <!-- Row: Tối nay -->
+        <div class="grid grid-cols-2 border-t border-gray-100">
+          <div class="bg-red-50 p-4 border-r border-red-100 text-sm text-red-800">
+            <ul class="space-y-1">
+              <li>• Tối nay bạn vẫn nằm xuống lúc 11 giờ.</li>
+              <li>• Đầu đầy suy nghĩ hỗn loạn.</li>
+              <li>• Mắt nhắm lại nhưng không ngủ được.</li>
+              <li>• Lại cầm điện thoại. Lại 12 giờ. Lại 1 giờ sáng.</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 p-4 text-sm text-green-800">
+            <ul>
+              <li>• Ngay tối nay, bắt đầu bước đầu tiên.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Row: Sáng hôm sau / Ngày thứ 5 -->
+        <div class="grid grid-cols-2 border-t border-gray-100">
+          <div class="bg-red-50 p-4 border-r border-red-100 text-sm text-red-800">
+            <ul class="space-y-1">
+              <li>• Sáng mai báo thức kêu lúc 7 giờ, bạn tắt, ngủ tiếp.</li>
+              <li>• 7 giờ 30. Rồi 8 giờ.</li>
+              <li>• Ngồi dậy cảm thấy đầu ong ong.</li>
+              <li>• Lại tự trách bản thân rồi hứa ngày mai không tái diễn.</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 p-4 text-sm text-green-800">
+            <ul>
+              <li>• <span class="font-bold text-green-700">Ngày thứ 5:</span> Cơ thể bắt đầu buồn ngủ sớm hơn tự nhiên.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Row: 6 tháng / Ngày thứ 7 -->
+        <div class="grid grid-cols-2 border-t border-gray-100">
+          <div class="bg-red-50 p-4 border-r border-red-100 text-sm text-red-800">
+            <ul class="space-y-1">
+              <li>• 6 tháng nữa bạn vẫn ở vị trí này.</li>
+              <li>• 1 năm nữa cũng vậy.</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 p-4 text-sm text-green-800">
+            <ul>
+              <li>• <span class="font-bold text-green-700">Ngày thứ 7:</span> Ngủ sâu suốt đêm, tự tỉnh dậy, đầu nhẹ hơn, dễ dàng nở nụ cười.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Row: Niềm tin / Ngày thứ 14 -->
+        <div class="grid grid-cols-2 border-t border-gray-100">
+          <div class="bg-red-50 p-4 border-r border-red-100 text-sm text-red-800">
+            <ul>
+              <li>• Và mỗi lần thử thay đổi rồi thất bại lại càng củng cố thêm niềm tin rằng bạn là người không thể duy trì bất cứ thứ gì.</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 p-4 text-sm text-green-800">
+            <ul>
+              <li>• <span class="font-bold text-green-700">Ngày thứ 14:</span> Làm việc cả ngày không mệt, lòng lâng lâng nhẹ nhõm, tối còn năng lượng.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Row: Ngày thứ 30 -->
+        <div class="grid grid-cols-2 border-t border-gray-100">
+          <div class="bg-red-50 p-4 border-r border-red-100 text-sm text-red-800 italic">
+            <ul>
+              <li>• Không có gì thay đổi.</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 p-4 text-sm text-green-800">
+            <ul>
+              <li>• <span class="font-bold text-green-700">Ngày thứ 30:</span> Người xung quanh nhận ra sự thay đổi trước khi bạn kịp giải thích.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="grid grid-cols-2 border-t border-gray-200">
+          <div class="bg-red-100 p-4 text-center border-r border-red-200">
+            <span class="text-red-700 font-bold text-sm">Tiếp tục như cũ</span>
+          </div>
+          <div class="bg-green-100 p-4 text-center">
+            <span class="text-green-700 font-bold text-sm">Quyết định là ở bạn. Và nếu sai, mình hoàn tiền.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-14 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">CÂU HỎI THƯỜNG GẶP</h2>
+      <div class="space-y-3">
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Tôi đã thử nhiều thứ rồi và đều thất bại. Cái này có khác không?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm space-y-2">
+            <p>Khác ở một điểm quan trọng: phương pháp này không yêu cầu bạn cố thêm.</p>
+            <p>Nó bắt đầu từ thứ nhỏ nhất có thể, rồi cơ thể tự điều chỉnh theo.</p>
+            <p>Ngay cả khi bạn làm không hoàn hảo, vẫn có kết quả.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Tôi rất bận, không có thời gian cho chương trình dài</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm leading-relaxed">
+            Mỗi bước chỉ 2 – 5 phút. Tổng cộng dưới 15 phút mỗi sáng. Ngày bận nhất vẫn làm được.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Tôi hay bỏ cuộc giữa chừng. Làm sao để lần này khác?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm space-y-2">
+            <p>Hệ thống này được thiết kế để ngay cả khi bạn làm không hoàn hảo vẫn có kết quả.</p>
+            <p>Quan trọng là làm đủ, không phải làm hoàn hảo.</p>
+            <p>Khi nghi thức đủ nhỏ và ngày thứ 5 – 7 đã bắt đầu có kết quả, cơ thể tự tạo ra động lực để tiếp tục, không cần ý chí cưỡng bức.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Bao lâu thì thấy kết quả đầu tiên?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm space-y-2">
+            <p>Từ ngày 5 – 7, hầu hết mọi người đã bắt đầu buồn ngủ sớm hơn tự nhiên.</p>
+            <p>Ngày thứ 14 là mốc thay đổi rõ rệt nhất về giấc ngủ và năng lượng.</p>
+            <p>Những người xung quanh bắt đầu nhận ra sự thay đổi.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Tôi không có vấn đề mất ngủ nghiêm trọng, chỉ hay mệt và năng suất thấp. Có phù hợp không?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm leading-relaxed">
+            Phù hợp. Vì gốc rễ của mệt mỏi và năng suất thấp thường nằm ở thần kinh chưa thật sự được hồi phục dù bạn không thấy mình "mất ngủ" theo nghĩa thông thường.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Tôi không phải dân văn phòng, tôi làm nghề tự do / chủ tiệm nhỏ. Có phù hợp không?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm space-y-2">
+            <p>Đây chính xác là nhóm người hệ thống này được xây dựng cho: người tự làm chủ, không ai kiểm soát giờ giấc của mình, và cũng không ai nhắc mình phải nghỉ ngơi đúng cách.</p>
+            <p>Kết quả thật của hệ thống đến từ một người chủ tiệm nhỏ.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Nếu tôi mua rồi thấy không hiệu quả thì sao?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm leading-relaxed">
+            Cam kết hoàn tiền 100% trong 30 ngày nếu bạn làm đủ 4 bước mỗi ngày mà không thấy bất kỳ thay đổi nào.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Tại sao giá chỉ có 229.000đ? Có gì không ổn không?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm space-y-2">
+            <p>Vì đây là đợt mở bán đầu tiên.</p>
+            <p>Mình cần thời gian để đồng hành và phản hồi thật từ người thật.</p>
+            <p>Và mình muốn rào cản đủ thấp để người nào đang thật sự cần thì tiếp cận được.</p>
+            <p>Sau đợt beta, giá sẽ tăng dần.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-toggle w-full text-left p-5 font-semibold text-gray-900 flex justify-between items-start gap-4 hover:bg-gray-50 transition">
+            <span>Tôi có cần dụng cụ gì đặc biệt không?</span>
+            <span class="faq-icon text-2xl text-amber-500 flex-shrink-0">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700 text-sm space-y-2">
+            <p>Không.</p>
+            <p>Không cần máy móc, không cần ứng dụng trả phí, không cần không gian đặc biệt.</p>
+            <p>Chỉ cần một chỗ nằm xuống và vài phút buổi sáng.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8 text-white" style="background: linear-gradient(135deg, #3d1a2e 0%, #7c3c5c 50%, #b06080 100%);">
+    <div class="max-w-2xl mx-auto text-center">
+      <a href="#cta-main" class="block gradient-cta text-white px-8 py-5 rounded-2xl text-2xl font-black shadow-2xl cta-pulse hover:opacity-90 transition mb-6 max-w-md mx-auto">
+        THAM GIA NGAY — CHỈ 229.000Đ
+      </a>
+      <p class="text-rose-200 mb-4">Cam kết hoàn tiền 100% trong 30 ngày nếu bạn làm đủ và không thấy thay đổi.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-rose-200 text-sm">
+        <span>Bắt đầu tối nay.</span>
+        <span class="hidden sm:block">·</span>
+        <span>Kết quả từ ngày thứ 7.</span>
+      </div>
+      <p class="mt-6 text-rose-200 italic">Vì thứ bạn cần không phải thêm ý chí. Chỉ là lần đầu tiên, để cơ thể được phép thật sự nghỉ ngơi.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-500 py-8 px-4 text-center">
+    <p class="text-sm">&copy; 2025 Hệ Thống Hồi Phục Năng Lượng. Mọi quyền được bảo lưu.</p>
+    <p class="text-xs mt-2">Kết quả có thể thay đổi tùy cá nhân. Cam kết hoàn tiền 100% trong 30 ngày.</p>
+  </footer>
+
+  <div class="h-16 md:hidden"></div>
+
+  <script>
+    document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var content = btn.nextElementSibling;
+        var icon = btn.querySelector('.faq-icon');
+        content.classList.toggle('hidden');
+        icon.textContent = content.classList.contains('hidden') ? '+' : '−';
+      });
+    });
+  </script>
+
+</body>
+</html>

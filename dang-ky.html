@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoàn Tất Đăng Ký — Hệ Thống Hồi Phục Năng Lượng</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#7c3c5c', secondary: '#b06080', cta: '#e85d04' },
+        fontFamily: { sans: ['Be Vietnam Pro', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    * { font-family: 'Be Vietnam Pro', sans-serif; }
+    body { background-color: #fdf7f9; }
+    .gradient-hero { background: linear-gradient(135deg, #3d1a2e 0%, #7c3c5c 50%, #b06080 100%); }
+    .gradient-cta  { background: linear-gradient(135deg, #e85d04, #f59e0b); }
+    .cta-pulse { animation: ctapulse 2s infinite; }
+    @keyframes ctapulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(232,93,4,.4); }
+      50%      { box-shadow: 0 0 0 12px rgba(232,93,4,0); }
+    }
+    .strikethrough { text-decoration: line-through; color: #9ca3af; }
+    input:focus { outline: none; border-color: #7c3c5c; box-shadow: 0 0 0 3px rgba(124,60,92,.15); }
+    .bump-card { border: 2px solid #e5e7eb; transition: border-color .2s, background .2s; }
+    .bump-card.selected { border-color: #7c3c5c; background: #fdf4f7; }
+    .bump-cb { display: none; }
+  </style>
+</head>
+<body class="text-gray-900 overflow-x-hidden">
+
+<header class="gradient-hero py-4 px-4 text-center">
+  <p class="text-rose-200 text-sm font-medium tracking-wide">Hệ Thống Hồi Phục Năng Lượng</p>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 py-10 sm:py-14">
+  <div class="text-center mb-10">
+    <h1 class="text-2xl sm:text-3xl font-black text-gray-900 mb-2">Hoàn Tất Đăng Ký</h1>
+    <p class="text-gray-500">Chỉ còn 1 bước nữa — điền thông tin để nhận hệ thống</p>
+  </div>
+
+  <div class="grid lg:grid-cols-5 gap-8 items-start">
+
+    <!-- ORDER SUMMARY -->
+    <div class="lg:col-span-2 order-2 lg:order-1">
+      <div class="bg-white rounded-2xl shadow-sm border border-pink-100 p-6 sticky top-6">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-white text-xl" style="background:linear-gradient(135deg,#7c3c5c,#b06080)">✦</div>
+          <div>
+            <p class="font-bold text-gray-900 text-sm leading-tight">Hệ Thống Hồi Phục Năng Lượng</p>
+            <p class="text-gray-500 text-xs mt-0.5">Bí quyết ngủ sâu & phục hồi 5–10 phút/ngày</p>
+          </div>
+        </div>
+
+        <div class="space-y-2 text-sm mb-5 pb-5 border-b border-gray-100">
+          <div class="flex items-center gap-2 text-gray-600"><span class="text-green-500">✓</span><span>Tài liệu hệ thống 4 bước đầy đủ</span></div>
+          <div class="flex items-center gap-2 text-gray-600"><span class="text-green-500">✓</span><span>Lịch 14 ngày chi tiết</span></div>
+          <div class="flex items-center gap-2 text-gray-600"><span class="text-green-500">✓</span><span>5 Bonus tặng kèm</span></div>
+          <div class="flex items-center gap-2 text-gray-600"><span class="text-green-500">✓</span><span>3 tháng nhóm hỗ trợ</span></div>
+        </div>
+
+        <div class="space-y-1 mb-4 text-sm" id="price-breakdown">
+          <div class="flex justify-between text-gray-500">
+            <span>Hệ Thống Hồi Phục Năng Lượng</span><span>229.000đ</span>
+          </div>
+          <div id="b1-line" class="flex justify-between text-gray-500 hidden">
+            <span>Audio Thả Lỏng</span><span>79.000đ</span>
+          </div>
+          <div id="b2-line" class="flex justify-between text-gray-500 hidden">
+            <span>Nhật Ký Chiến Thắng</span><span>99.000đ</span>
+          </div>
+          <div id="b3-line" class="flex justify-between text-gray-500 hidden">
+            <span>Quick-Check</span><span>119.000đ</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-3 border-t border-gray-100">
+          <span class="font-bold text-gray-900">Tổng cộng</span>
+          <span class="text-2xl font-black text-orange-600" id="total-display">229.000đ</span>
+        </div>
+        <div class="mt-3 bg-green-50 rounded-xl p-2.5 text-center">
+          <p class="text-green-700 text-xs font-semibold">Tiết kiệm 1.534.000đ so với giá gốc</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="lg:col-span-3 order-1 lg:order-2">
+      <form id="reg-form" class="bg-white rounded-2xl shadow-sm border border-pink-100 p-6 sm:p-8">
+        <h2 class="text-lg font-bold text-gray-900 mb-6">Thông tin nhận hàng</h2>
+        <div class="space-y-5">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Họ và tên <span class="text-red-500">*</span></label>
+            <input type="text" id="inp-name" placeholder="Nguyễn Thị A" required
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 transition">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Email <span class="text-red-500">*</span></label>
+            <input type="email" id="inp-email" placeholder="email@vidu.com" required
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 transition">
+            <p class="text-xs text-gray-400 mt-1.5">Tài liệu và hướng dẫn sẽ gửi về email này</p>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Số điện thoại <span class="text-red-500">*</span></label>
+            <input type="tel" id="inp-phone" placeholder="09xxxxxxxx" required
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 transition">
+          </div>
+        </div>
+
+        <!-- ORDER BUMPS -->
+        <div class="mt-8 space-y-3">
+          <p class="text-sm font-bold text-gray-700 uppercase tracking-wide">Thêm vào đơn hàng (tùy chọn)</p>
+
+          <!-- Bump 1 -->
+          <label class="bump-card rounded-xl p-4 cursor-pointer block" id="card-b1">
+            <input type="checkbox" class="bump-cb" id="cb-b1">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5 check-box" id="box-b1">
+                <span class="text-white text-xs font-bold hidden" id="check-b1">✓</span>
+              </div>
+              <div class="flex-1">
+                <p class="font-bold text-gray-900 text-sm">AUDIO THẢ LỎNG & HÍT THỞ</p>
+                <p class="text-gray-500 text-xs mt-0.5">Chỉ cần nghe và chìm vào giấc ngủ, không cần nhớ kỹ thuật gì</p>
+                <p class="mt-1.5"><span class="strikethrough text-xs">299.000đ</span> <span class="text-orange-600 font-bold text-sm ml-1">79.000đ</span></p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Bump 2 -->
+          <label class="bump-card rounded-xl p-4 cursor-pointer block" id="card-b2">
+            <input type="checkbox" class="bump-cb" id="cb-b2">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5 check-box" id="box-b2">
+                <span class="text-white text-xs font-bold hidden" id="check-b2">✓</span>
+              </div>
+              <div class="flex-1">
+                <p class="font-bold text-gray-900 text-sm">NHẬT KÝ CHIẾN THẮNG NHỎ</p>
+                <p class="text-gray-500 text-xs mt-0.5">Nhìn thấy tiến bộ mỗi ngày, không bỏ cuộc ở ngày thứ 7</p>
+                <p class="mt-1.5"><span class="strikethrough text-xs">299.000đ</span> <span class="text-orange-600 font-bold text-sm ml-1">99.000đ</span></p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Bump 3 -->
+          <label class="bump-card rounded-xl p-4 cursor-pointer block" id="card-b3">
+            <input type="checkbox" class="bump-cb" id="cb-b3">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5 check-box" id="box-b3">
+                <span class="text-white text-xs font-bold hidden" id="check-b3">✓</span>
+              </div>
+              <div class="flex-1">
+                <p class="font-bold text-gray-900 text-sm">QUICK-CHECK: TẠI SAO TÔI CHƯA THỂ THẢ LỎNG?</p>
+                <p class="text-gray-500 text-xs mt-0.5">Giải mã rào cản để 4 nghi thức ngấm sâu hơn</p>
+                <p class="mt-1.5"><span class="strikethrough text-xs">399.000đ</span> <span class="text-orange-600 font-bold text-sm ml-1">119.000đ</span></p>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <button type="submit" id="submit-btn"
+          class="mt-8 w-full gradient-cta text-white py-4 rounded-xl text-lg font-black shadow-lg cta-pulse hover:opacity-90 transition">
+          HOÀN TẤT ĐĂNG KÝ — <span id="btn-total">229.000Đ</span>
+        </button>
+
+        <div class="mt-4 text-center text-xs text-gray-400 leading-relaxed">
+          🔒 Thông tin bảo mật · ✓ Hoàn tiền 100% trong 30 ngày
+        </div>
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<footer class="text-center py-6 text-gray-400 text-xs">
+  © 2025 Hệ Thống Hồi Phục Năng Lượng · Cam kết hoàn tiền 100% trong 30 ngày
+</footer>
+
+<script>
+  const GAS_URL = 'https://script.google.com/macros/s/AKfycbz3pGU1eYRl-cClAwQrADTqdD5SYlLlwmueDKphl8NMUXa_qlhUnTm1HE2DQ_9-XfEm/exec';
+  const PRICES = { base: 229000, b1: 79000, b2: 99000, b3: 119000 };
+
+  function fmtVnd(n) { return n.toLocaleString('vi-VN') + 'đ'; }
+
+  function updateTotal() {
+    let total = PRICES.base;
+    const b1 = document.getElementById('cb-b1').checked;
+    const b2 = document.getElementById('cb-b2').checked;
+    const b3 = document.getElementById('cb-b3').checked;
+    if (b1) total += PRICES.b1;
+    if (b2) total += PRICES.b2;
+    if (b3) total += PRICES.b3;
+    document.getElementById('total-display').textContent = fmtVnd(total);
+    document.getElementById('btn-total').textContent    = fmtVnd(total).toUpperCase();
+    document.getElementById('b1-line').classList.toggle('hidden', !b1);
+    document.getElementById('b2-line').classList.toggle('hidden', !b2);
+    document.getElementById('b3-line').classList.toggle('hidden', !b3);
+    return { total, b1, b2, b3 };
+  }
+
+  ['b1','b2','b3'].forEach(id => {
+    const cb   = document.getElementById('cb-' + id);
+    const card = document.getElementById('card-' + id);
+    const box  = document.getElementById('box-' + id);
+    const chk  = document.getElementById('check-' + id);
+    card.addEventListener('click', () => {
+      cb.checked = !cb.checked;
+      card.classList.toggle('selected', cb.checked);
+      box.style.background  = cb.checked ? '#7c3c5c' : '';
+      box.style.borderColor = cb.checked ? '#7c3c5c' : '';
+      chk.classList.toggle('hidden', !cb.checked);
+      updateTotal();
+    });
+  });
+
+  document.getElementById('reg-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = true;
+    btn.textContent = 'Đang xử lý...';
+
+    const { total, b1, b2, b3 } = updateTotal();
+
+    try {
+      const res = await fetch(GAS_URL, {
+        method: 'POST',
+        body: JSON.stringify({
+          action: 'createOrder',
+          data: {
+            name:        document.getElementById('inp-name').value.trim(),
+            email:       document.getElementById('inp-email').value.trim(),
+            phone:       document.getElementById('inp-phone').value.trim(),
+            bump1:       b1, bump2: b2, bump3: b3,
+            totalAmount: total
+          }
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        const p = new URLSearchParams({
+          orderId:     data.orderId,
+          ckContent:   data.ckContent,
+          totalAmount: data.totalAmount
+        });
+        window.location.href = 'xac-nhan.html?' + p.toString();
+      } else {
+        throw new Error(data.error || 'Lỗi không xác định');
+      }
+    } catch(err) {
+      alert('Có lỗi xảy ra: ' + err.message + '. Vui lòng thử lại.');
+      btn.disabled = false;
+      btn.innerHTML = 'HOÀN TẤT ĐĂNG KÝ — <span id="btn-total">' + fmtVnd(total).toUpperCase() + '</span>';
+    }
+  });
+</script>
+</body>
+</html>
