@@ -65,7 +65,8 @@
 
         <div class="space-y-1 mb-4 text-sm" id="price-breakdown">
           <div class="flex justify-between text-gray-500">
-            <span>Hệ Thống Hồi Phục Năng Lượng</span><span>229.000đ</span>
+            <span>Hệ Thống Hồi Phục Năng Lượng</span>
+            <span class="text-right"><span class="line-through text-gray-300 text-xs mr-1">1.763.000đ</span><span>229.000đ</span></span>
           </div>
           <div id="b1-line" class="flex justify-between text-gray-500 hidden">
             <span>Audio Thả Lỏng</span><span>79.000đ</span>
@@ -112,52 +113,71 @@
         </div>
 
         <!-- ORDER BUMPS -->
-        <div class="mt-8 space-y-3">
-          <p class="text-sm font-bold text-gray-700 uppercase tracking-wide">Thêm vào đơn hàng (tùy chọn)</p>
+        <div class="mt-8 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="flex-1 h-px bg-gray-200"></div>
+            <p class="text-xs font-bold text-gray-400 uppercase tracking-widest px-2">Thêm vào đơn hàng</p>
+            <div class="flex-1 h-px bg-gray-200"></div>
+          </div>
 
           <!-- Bump 1 -->
-          <label class="bump-card rounded-xl p-4 cursor-pointer block" id="card-b1">
+          <label class="bump-card rounded-2xl p-5 cursor-pointer block" id="card-b1">
             <input type="checkbox" class="bump-cb" id="cb-b1">
-            <div class="flex items-start gap-3">
-              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5 check-box" id="box-b1">
+            <div class="flex items-start gap-3 mb-3">
+              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5" id="box-b1">
                 <span class="text-white text-xs font-bold hidden" id="check-b1">✓</span>
               </div>
               <div class="flex-1">
-                <p class="font-bold text-gray-900 text-sm">AUDIO THẢ LỎNG & HÍT THỞ</p>
-                <p class="text-gray-500 text-xs mt-0.5">Chỉ cần nghe và chìm vào giấc ngủ, không cần nhớ kỹ thuật gì</p>
-                <p class="mt-1.5"><span class="strikethrough text-xs">299.000đ</span> <span class="text-orange-600 font-bold text-sm ml-1">79.000đ</span></p>
+                <p class="font-black text-gray-900 text-sm leading-tight">AUDIO THẢ LỎNG & HÍT THỞ — DÙNG MỖI ĐÊM KHI CẦN</p>
+                <p class="text-orange-600 font-bold text-sm mt-1"><span class="strikethrough text-gray-400 font-normal text-xs mr-1">299.000đ</span>Chỉ 79.000đ</p>
               </div>
             </div>
+            <p class="text-gray-600 text-xs leading-relaxed mb-2 pl-8">Biết cách thả lỏng là một chuyện. Thật sự thả lỏng được khi nằm xuống là chuyện khác. Nhiều người đọc hướng dẫn rồi hiểu nhưng nằm xuống thì vai vẫn gồng, đầu vẫn chạy.</p>
+            <ul class="space-y-1 pl-8">
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span><strong>Hít thở thả lỏng:</strong> chuyển từ căng sang sẵn sàng ngủ chỉ trong 2–5 phút</span></li>
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span><strong>Thả lỏng toàn thân:</strong> giọng dẫn từng nhóm cơ từ vai xuống chân</span></li>
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span>Dùng được bất cứ lúc nào — đêm khó ngủ, buổi trưa mệt, ngày căng thẳng</span></li>
+            </ul>
           </label>
 
           <!-- Bump 2 -->
-          <label class="bump-card rounded-xl p-4 cursor-pointer block" id="card-b2">
+          <label class="bump-card rounded-2xl p-5 cursor-pointer block" id="card-b2">
             <input type="checkbox" class="bump-cb" id="cb-b2">
-            <div class="flex items-start gap-3">
-              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5 check-box" id="box-b2">
+            <div class="flex items-start gap-3 mb-3">
+              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5" id="box-b2">
                 <span class="text-white text-xs font-bold hidden" id="check-b2">✓</span>
               </div>
               <div class="flex-1">
-                <p class="font-bold text-gray-900 text-sm">NHẬT KÝ CHIẾN THẮNG NHỎ</p>
-                <p class="text-gray-500 text-xs mt-0.5">Nhìn thấy tiến bộ mỗi ngày, không bỏ cuộc ở ngày thứ 7</p>
-                <p class="mt-1.5"><span class="strikethrough text-xs">299.000đ</span> <span class="text-orange-600 font-bold text-sm ml-1">99.000đ</span></p>
+                <p class="font-black text-gray-900 text-sm leading-tight">NHẬT KÝ CHIẾN THẮNG NHỎ</p>
+                <p class="text-orange-600 font-bold text-sm mt-1"><span class="strikethrough text-gray-400 font-normal text-xs mr-1">299.000đ</span>Chỉ 99.000đ</p>
               </div>
             </div>
+            <p class="text-gray-600 text-xs leading-relaxed mb-2 pl-8">Cơ thể hồi phục rất âm thầm. Sau 7 ngày, hầu hết mọi người đều quên mình đã thay đổi bao nhiêu — vì những dấu hiệu đầu tiên nhỏ đến mức não tự bỏ qua.</p>
+            <ul class="space-y-1 pl-8">
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span>Chỉ 2 phút sáng và tối — nhìn thấy dấu hiệu nhỏ bình thường bạn sẽ bỏ qua</span></li>
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span>Sau 14 ngày: bản đồ bằng chứng rõ ràng cơ thể đang thật sự thay đổi</span></li>
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span>Khi muốn bỏ cuộc — mở ra, bạn thấy mình đã đi xa hơn mình nghĩ</span></li>
+            </ul>
           </label>
 
           <!-- Bump 3 -->
-          <label class="bump-card rounded-xl p-4 cursor-pointer block" id="card-b3">
+          <label class="bump-card rounded-2xl p-5 cursor-pointer block" id="card-b3">
             <input type="checkbox" class="bump-cb" id="cb-b3">
-            <div class="flex items-start gap-3">
-              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5 check-box" id="box-b3">
+            <div class="flex items-start gap-3 mb-3">
+              <div class="w-5 h-5 rounded border-2 border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5" id="box-b3">
                 <span class="text-white text-xs font-bold hidden" id="check-b3">✓</span>
               </div>
               <div class="flex-1">
-                <p class="font-bold text-gray-900 text-sm">QUICK-CHECK: TẠI SAO TÔI CHƯA THỂ THẢ LỎNG?</p>
-                <p class="text-gray-500 text-xs mt-0.5">Giải mã rào cản để 4 nghi thức ngấm sâu hơn</p>
-                <p class="mt-1.5"><span class="strikethrough text-xs">399.000đ</span> <span class="text-orange-600 font-bold text-sm ml-1">119.000đ</span></p>
+                <p class="font-black text-gray-900 text-sm leading-tight">QUICK-CHECK: TẠI SAO TÔI CHƯA THỂ THẢ LỎNG?</p>
+                <p class="text-orange-600 font-bold text-sm mt-1"><span class="strikethrough text-gray-400 font-normal text-xs mr-1">399.000đ</span>Chỉ 119.000đ</p>
               </div>
             </div>
+            <p class="text-gray-600 text-xs leading-relaxed mb-2 pl-8">Có những người làm đúng mọi thứ. Đặt điện thoại xuống. Tắt đèn đúng giờ. Nhưng cơ thể vẫn không chịu buông — vì bên trong đang chạy ngầm một trạng thái mà cơ thể đã học từ rất lâu.</p>
+            <ul class="space-y-1 pl-8">
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span>Bộ câu hỏi "khám nhanh" — nhìn thấy mình đang tắc ở đâu</span></li>
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span>Giúp 4 nghi thức ngấm sâu hơn thay vì chỉ chạm bề mặt</span></li>
+              <li class="flex items-start gap-1.5 text-xs text-gray-600"><span class="text-primary flex-shrink-0">→</span><span><em>"Hóa ra không phải mình lười. Mình chỉ chưa từng thật sự hiểu bản thân"</em></span></li>
+            </ul>
           </label>
         </div>
 
