@@ -225,19 +225,17 @@
     const { total, b1, b2, b3 } = updateTotal();
 
     try {
-      const res = await fetch(GAS_URL, {
-        method: 'POST',
-        body: JSON.stringify({
-          action: 'createOrder',
-          data: {
-            name:        document.getElementById('inp-name').value.trim(),
-            email:       document.getElementById('inp-email').value.trim(),
-            phone:       document.getElementById('inp-phone').value.trim(),
-            bump1:       b1, bump2: b2, bump3: b3,
-            totalAmount: total
-          }
-        })
+      const params = new URLSearchParams({
+        action:      'createOrder',
+        name:        document.getElementById('inp-name').value.trim(),
+        email:       document.getElementById('inp-email').value.trim(),
+        phone:       document.getElementById('inp-phone').value.trim(),
+        bump1:       b1,
+        bump2:       b2,
+        bump3:       b3,
+        totalAmount: total
       });
+      const res = await fetch(GAS_URL + '?' + params.toString());
       const data = await res.json();
       if (data.success) {
         const p = new URLSearchParams({
